@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feane - مطعم فاست فود</title>
+  <meta name="description" content="Feane Fast Food Restaurant - اطلب أشهى البرجر والبيتزا والباستا والبطاطس. احجز طاولتك أونلاين الآن." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">Feane</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" id="nav-home">HOME</a></li>
+        <li><a href="#menu" class="nav-link" id="nav-menu">MENU</a></li>
+        <li><a href="#about" class="nav-link" id="nav-about">ABOUT</a></li>
+        <li><a href="#book" class="nav-link" id="nav-book">BOOK TABLE</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-icon-btn" id="searchBtn" aria-label="Search"><i class="fas fa-search"></i></button>
+        <button class="nav-icon-btn cart-btn" id="cartBtn" aria-label="Cart">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <a href="#book" class="btn-order-nav">اطلب الآن</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+
+    <div class="hero-slider" id="heroSlider">
+
+      <!-- Slide 1 -->
+      <div class="hero-slide active" id="slide-0">
+        <div class="hero-content">
+          <h1 class="hero-title">Fast Food Restaurant</h1>
+          <p class="hero-text">
+            استمتع بأشهى وجبات الفاست فود بمكونات طازجة وإعداد احترافي.
+            نقدم لك تجربة طعام لا تُنسى بأسعار تناسب الجميع.
+            اطلب الآن واستمتع بالتوصيل السريع لباب بيتك.
+          </p>
+          <a href="#menu" class="btn-primary">اطلب الآن</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="hero-slide" id="slide-1">
+        <div class="hero-content">
+          <h1 class="hero-title">Delicious Burgers</h1>
+          <p class="hero-text">
+            برجر طازج يومياً بأجود أنواع اللحوم والمكونات الطبيعية.
+            اختر من بين تشكيلة واسعة من البرجر الكلاسيكي والمميز.
+            طعم لا يُقاوم في كل قضمة!
+          </p>
+          <a href="#menu" class="btn-primary">اطلب الآن</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="hero-slide" id="slide-2">
+        <div class="hero-content">
+          <h1 class="hero-title">Fresh &amp; Tasty Pizza</h1>
+          <p class="hero-text">
+            بيتزا طازجة بعجينة هشة وصلصة منزلية وإضافات متنوعة تناسب كل الأذواق.
+            من البيبروني الكلاسيكي إلى الخضار الشهية، عندنا كل ما تحبه.
+            استمتع بأحلى بيتزا مع عائلتك وأصدقائك.
+          </p>
+          <a href="#menu" class="btn-primary">اطلب الآن</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Slider Dots -->
+    <div class="hero-dots" id="heroDots">
+      <button class="hero-dot active" data-slide="0" aria-label="Slide 1"></button>
+      <button class="hero-dot" data-slide="1" aria-label="Slide 2"></button>
+      <button class="hero-dot" data-slide="2" aria-label="Slide 3"></button>
+    </div>
+
+  </section>
+
+  <!-- ===== OFFERS SECTION ===== -->
+  <section class="offers-section">
+    <div class="container">
+      <div class="offers-grid">
+        <div class="offer-card">
+          <div class="offer-image">
+            <img src="img/o1.jpg" alt="Tasty Thursdays" />
+          </div>
+          <div class="offer-content">
+            <h3>Tasty Thursdays</h3>
+            <div class="offer-discount"><span class="big-num">15%</span> <span class="off-text">off</span></div>
+            <a href="#menu" class="btn-offer">Order Now <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="offer-card">
+          <div class="offer-image">
+            <img src="img/o2.jpg" alt="Pizza Days" />
+          </div>
+          <div class="offer-content">
+            <h3>Pizza Days</h3>
+            <div class="offer-discount"><span class="big-num">20%</span> <span class="off-text">off</span></div>
+            <a href="#menu" class="btn-offer">Order Now <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU SECTION ===== -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <h2 class="section-title">Our Menu</h2>
+      <div class="menu-filters">
+        <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+        <button class="filter-btn" data-filter="burger" id="filter-burger">Burger</button>
+        <button class="filter-btn" data-filter="pizza" id="filter-pizza">Pizza</button>
+        <button class="filter-btn" data-filter="pasta" id="filter-pasta">Pasta</button>
+        <button class="filter-btn" data-filter="fries" id="filter-fries">Fries</button>
+      </div>
+      <div class="menu-grid" id="menuGrid">
+        <!-- Burgers -->
+        <div class="menu-card" data-category="burger">
+          <div class="menu-card-img">
+            <img src="img/f1.png" alt="Delicious Burger" />
+            <button class="wishlist-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="menu-card-body">
+            <h4>Delicious Burger</h4>
+            <p>برجر شهي بلحم طازج مع خضروات طازجة وصلصة خاصة لا تُقاوَم في كل قضمة.</p>
+            <div class="menu-card-footer">
+              <span class="price">299 ج.م</span>
+              <button class="btn-add-cart" onclick="addToCart(this, 'Delicious Burger', 299)" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card" data-category="burger">
+          <div class="menu-card-img">
+            <img src="img/f2.png" alt="Classic Burger" />
+            <button class="wishlist-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="menu-card-body">
+            <h4>Classic Burger</h4>
+            <p>برجر كلاسيكي بجودة عالية مع جبنة شيدر ذائبة وطماطم وخس طازجَين.</p>
+            <div class="menu-card-footer">
+              <span class="price">219 ج.م</span>
+              <button class="btn-add-cart" onclick="addToCart(this, 'Classic Burger', 219)" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card" data-category="burger">
+          <div class="menu-card-img">
+            <img src="img/f3.png" alt="Cheese Burger" />
+            <button class="wishlist-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="menu-card-body">
+            <h4>Cheese Burger</h4>
+            <p>تشيز برجر فاخر بطبقة مزدوجة من الجبنة وصلصة بيتنا السرية المميزة.</p>
+            <div class="menu-card-footer">
+              <span class="price">259 ج.م</span>
+              <button class="btn-add-cart" onclick="addToCart(this, 'Cheese Burger', 259)" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Pizzas -->
+        <div class="menu-card" data-category="pizza">
+          <div class="menu-card-img">
+            <img src="img/f4.png" alt="Delicious Pizza" />
+            <button class="wishlist-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="menu-card-body">
+            <h4>Delicious Pizza</h4>
+            <p>بيتزا شهية بعجينة مقرمشة وصلصة طماطم منزلية ومكونات طازجة متنوعة.</p>
+            <div class="menu-card-footer">
+              <span class="price">279 ج.م</span>
+              <button class="btn-add-cart" onclick="addToCart(this, 'Delicious Pizza', 279)" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card" data-category="pizza">
+          <div class="menu-card-img">
+            <img src="img/f5.png" alt="Pepperoni Pizza" />
+            <button class="wishlist-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="menu-card-body">
+            <h4>Pepperoni Pizza</h4>
+            <p>بيتزا البيبروني الكلاسيكية بشرائح بيبروني سخية فوق جبنة موزاريلا ذائبة.</p>
+            <div class="menu-card-footer">
+              <span class="price">299 ج.م</span>
+              <button class="btn-add-cart" onclick="addToCart(this, 'Pepperoni Pizza', 299)" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card" data-category="pizza">
+          <div class="menu-card-img">
+            <img src="img/f6.png" alt="Veggie Pizza" />
+            <button class="wishlist-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="menu-card-body">
+            <h4>Veggie Pizza</h4>
+            <p>بيتزا الخضار بمزيج ملوّن من الفلفل والزيتون والفطر على أساس طماطم منعش.</p>
+            <div class="menu-card-footer">
+              <span class="price">239 ج.م</span>
+              <button class="btn-add-cart" onclick="addToCart(this, 'Veggie Pizza', 239)" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Pasta -->
+        <div class="menu-card" data-category="pasta">
+          <div class="menu-card-img">
+            <img src="img/f7.png" alt="Spaghetti Pasta" />
+            <button class="wishlist-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="menu-card-body">
+            <h4>Spaghetti Pasta</h4>
+            <p>سباغيتي بولونيز بصلصة اللحم الغنية والمطبوخة على نار هادئة حتى الإتقان.</p>
+            <div class="menu-card-footer">
+              <span class="price">189 ج.م</span>
+              <button class="btn-add-cart" onclick="addToCart(this, 'Spaghetti Pasta', 189)" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card" data-category="pasta">
+          <div class="menu-card-img">
+            <img src="img/f8.png" alt="Creamy Pasta" />
+            <button class="wishlist-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="menu-card-body">
+            <h4>Creamy Pasta</h4>
+            <p>باستا كريمي بصلصة الكريمة الناعمة مع الفطر والدجاج في مزيج لا يُقاوَم.</p>
+            <div class="menu-card-footer">
+              <span class="price">209 ج.م</span>
+              <button class="btn-add-cart" onclick="addToCart(this, 'Creamy Pasta', 209)" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card" data-category="pasta">
+          <div class="menu-card-img">
+            <img src="img/f9.png" alt="Penne Arrabbiata" />
+            <button class="wishlist-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="menu-card-body">
+            <h4>Penne Arrabbiata</h4>
+            <p>باستا بيني بصلصة الأرابياتا الحارة مع ثوم وريحان طازج لنكهة إيطالية أصيلة.</p>
+            <div class="menu-card-footer">
+              <span class="price">179 ج.م</span>
+              <button class="btn-add-cart" onclick="addToCart(this, 'Penne Arrabbiata', 179)" aria-label="Add to cart"><i class="fas fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="img/about-img.png" alt="We Are Feane" class="about-img" />
+        </div>
+        <div class="about-content">
+          <h2 class="about-title">We Are Feane</h2>
+          <p>
+            نحن في Feane نؤمن أن الطعام الجيد يجمع الناس ويصنع الذكريات الجميلة.
+            نقدم أشهى وجبات الفاست فود بمكونات طازجة يومياً ومعايير نظافة عالية.
+            فريقنا الشغوف يعمل بتفانٍ لتقديم تجربة طعام استثنائية لكل زبون.
+            نفخر بثقة عملائنا ونسعى دائماً لتجاوز توقعاتهم في كل زيارة.
+          </p>
+          <a href="#menu" class="btn-primary">اعرف أكثر</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BOOK A TABLE SECTION ===== -->
+  <section class="book-section" id="book">
+    <div class="container">
+      <div class="book-grid">
+        <div class="book-form-wrapper">
+          <h2 class="book-title">احجز طاولتك</h2>
+          <form class="book-form" id="bookForm" onsubmit="handleBooking(event)">
+            <input type="text" class="form-input" id="bookName" placeholder="اسمك الكريم" required />
+            <input type="tel" class="form-input" id="bookPhone" placeholder="رقم الهاتف" required />
+            <input type="email" class="form-input" id="bookEmail" placeholder="بريدك الإلكتروني" required />
+            <select class="form-input form-select" id="bookPersons" required>
+              <option value="" disabled selected>عدد الأشخاص؟</option>
+              <option value="1">شخص 1</option>
+              <option value="2">شخصان 2</option>
+              <option value="3">أشخاص 3</option>
+              <option value="4">أشخاص 4</option>
+              <option value="5">أشخاص 5</option>
+              <option value="6+">6+ أشخاص</option>
+            </select>
+            <input type="date" class="form-input" id="bookDate" required />
+            <button type="submit" class="btn-primary book-btn" id="bookSubmit">احجز الآن</button>
+          </form>
+        </div>
+        <div class="book-map">
+          <iframe
+            src="https://maps.google.com/maps?q=City+Hall+Park,+New+York,+NY,+USA&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="100%"
+            style="border:none; border-radius: 12px;"
+            title="Restaurant Location - City Hall Park, New York"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS SECTION ===== -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <h2 class="section-title">ماذا يقول عملاؤنا</h2>
+
+      <div class="testimonials-slider-wrapper">
+        <div class="testimonials-track" id="tTrack">
+
+          <!-- Slide 1 -->
+          <div class="testimonials-slide" id="tslide-0">
+            <div class="testimonials-grid">
+
+              <div class="testimonial-item">
+                <div class="testimonial-card">
+                  <p class="testimonial-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                  </p>
+                  <div class="testimonial-footer">
+                    <strong class="testimonial-name">Moana Michell</strong>
+                    <span class="testimonial-role">magna aliqua</span>
+                  </div>
+                </div>
+                <div class="testimonial-avatar">
+                  <img src="img/client1.jpg" alt="Moana Michell" />
+                </div>
+              </div>
+
+              <div class="testimonial-item">
+                <div class="testimonial-card">
+                  <p class="testimonial-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                  </p>
+                  <div class="testimonial-footer">
+                    <strong class="testimonial-name">Mike Hamell</strong>
+                    <span class="testimonial-role">magna aliqua</span>
+                  </div>
+                </div>
+                <div class="testimonial-avatar">
+                  <img src="img/client2.jpg" alt="Mike Hamell" />
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonials-slide" id="tslide-1">
+            <div class="testimonials-grid">
+
+              <div class="testimonial-item">
+                <div class="testimonial-card">
+                  <p class="testimonial-text">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+                  </p>
+                  <div class="testimonial-footer">
+                    <strong class="testimonial-name">Sarah Johnson</strong>
+                    <span class="testimonial-role">food lover</span>
+                  </div>
+                </div>
+                <div class="testimonial-avatar">
+                  <img src="img/client1.jpg" alt="Sarah Johnson" />
+                </div>
+              </div>
+
+              <div class="testimonial-item">
+                <div class="testimonial-card">
+                  <p class="testimonial-text">
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet.
+                  </p>
+                  <div class="testimonial-footer">
+                    <strong class="testimonial-name">David Clark</strong>
+                    <span class="testimonial-role">regular customer</span>
+                  </div>
+                </div>
+                <div class="testimonial-avatar">
+                  <img src="img/client2.jpg" alt="David Clark" />
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div><!-- end track -->
+      </div><!-- end slider-wrapper -->
+
+
+      <!-- Navigation Arrows -->
+      <div class="testimonials-nav">
+        <button class="t-nav-btn" id="tPrev" onclick="testimonialPrev()" aria-label="Previous testimonial">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="t-nav-btn" id="tNext" onclick="testimonialNext()" aria-label="Next testimonial">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact Us</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>القاهرة، مصر</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+201093421310" style="color:inherit;text-decoration:none;">اتصل: +20 109 342 1310</a>
+            </li>
+            <li>
+              <i class="fab fa-whatsapp"></i>
+              <a href="https://wa.me/201093421310" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">واتساب: 01093421310</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>info@feane.com</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-center">
+          <h3 class="footer-logo">Feane</h3>
+          <p>مطعم Feane — وجهتك المفضلة لأشهى وجبات الفاست فود في مصر.
+            نقدم البرجر والبيتزا والباستا بمكونات طازجة وجودة لا تُنافَس.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col footer-right">
+          <h4 class="footer-col-title">Opening Hours</h4>
+          <p class="hours-day">Everyday</p>
+          <p class="hours-time">10:00 Am - 10:30 Pm</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Feane Restaurant — جميع الحقوق محفوظة</p>
+        <p class="footer-dist">تصميم وتطوير احترافي &hearts;</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLOAT BUTTON ===== -->
+  <a href="https://wa.me/201093421310" target="_blank" rel="noopener" class="whatsapp-float" aria-label="تواصل عبر واتساب">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ===== CART SIDEBAR ===== -->
+  <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>طلبك</h3>
+      <button onclick="closeCart()" class="close-cart" aria-label="Close cart"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="empty-cart">سلة طلباتك فارغة</p>
+    </div>
+    <div class="cart-total" id="cartTotal" style="display:none">
+      <div class="total-row">
+        <span>الإجمالي:</span>
+        <span id="totalPrice">0 ج.م</span>
+      </div>
+      <button class="btn-primary" style="width:100%; margin-top:12px">تأكيد الطلب</button>
+    </div>
+  </div>
+
+  <!-- ===== SUCCESS TOAST ===== -->
+  <div class="toast" id="toast">
+    <i class="fas fa-check-circle"></i>
+    <span id="toastMsg">Added to cart!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
